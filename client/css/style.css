@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+#bar {
+  width: 100%;
+  height: 80px;
+  background: rgba(139, 0, 0, 0.6);
+}
+#icons {
+  width: 25%;
+  height: 80px;
+  margin: 0 auto;
+  background: transparent;
+}
+#icon,
+#icon2,
+#icon3 {
+  width: 10%;
+  height: 80px;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 23px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 65px;
+}
+#icon:hover,
+#icon2:hover,
+#icon3:hover {
+  cursor: pointer;
+  background: rgba(250, 250, 250, 0.5);
+}
+#info {
+  width: 35%;
+  height: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: auto;
+  z-index: 100;
+  position: absolute;
+  margin-top: -500px;
+  display: none;
+  opacity: 0;
+  background: #f6f6f6;
+  box-shadow: 0 0 20px black;
+  transition: margin-top 1s, opacity 1s;
+}
+#clasament {
+  width: 35%;
+  height: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: auto;
+  z-index: 100;
+  position: absolute;
+  margin-top: -600px;
+  display: none;
+  opacity: 0;
+  background: #f6f6f6;
+  box-shadow: 0 0 20px black;
+  transition: margin-top 1s, opacity 1s;
+}
+#informatii {
+  width: 45%;
+  height: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: auto;
+  z-index: 100;
+  position: absolute;
+  display: none;
+  background: #f6f6f6;
+  box-shadow: 0 0 20px black;
+}
+#header {
+  width: 100%;
+  height: 50px;
+  background: darkred;
+}
+#header2 {
+  width: 100%;
+  height: 50px;
+  background: darkred;
+}
+#closebtn {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+#closebtn2 {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+#closebtn3 {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+#closebtn:hover {
+  cursor: pointer;
+}
+#closebtn2:hover {
+  cursor: pointer;
+}
+#closebtn3:hover {
+  cursor: pointer;
+}
+#text {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: bolder;
+}
+#text2 {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: bolder;
+}
+#text3 {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Merienda", cursive;
+  font-weight: bolder;
+}
+.titlu {
+  margin-top: 8%;
+  height: 100px;
+  font-family: Engravers MT;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1.5px #ea0c35ab;
+}
+#nr_intrebari {
+  width: 60%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: "Oxygen", sans-serif;
+  -webkit-text-stroke: 1.8px rgb(139, 0, 0);
+}
+#pct {
+  font-size: 35px;
+  font-family: "Oxygen", sans-serif;
+  -webkit-text-stroke: 1.3px rgb(139, 0, 0);
+  color: white;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  top: 80%;
+  left: 85%;
+}
+#adauga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  border-radius: 50px;
+  background: rgba(170, 75, 65, 0.4);
+  position: fixed;
+  top: 85%;
+  right: 90%;
+}
+#align {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+#adauga:hover {
+  background: rgb(170, 75, 65);
+  cursor: pointer;
+}
+.item {
+  width: 100%;
+  height: 50px;
+  background-color: #bf9b2d70;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.nume {
+  width: auto;
+  height: 40px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Merienda", cursive;
+  float: left;
+}
+.punctaj {
+  width: auto;
+  height: 40px;
+  padding: 16px;
+  font-size: 25px;
+  font-family: "Merienda", cursive;
+  float: right;
+}
