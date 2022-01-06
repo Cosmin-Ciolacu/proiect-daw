@@ -8,6 +8,7 @@ import { questions } from "./querstions";
 import { User } from "./models/User";
 config();
 
+// conectare la baza de date mongodb
 const uri =
   "mongodb+srv://cosmin:cosmin@cluster0.qklhm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
@@ -18,6 +19,7 @@ mongoose.connect(uri, (err) => {
 
 const PORT = process.env.PORT || 8000;
 
+//initializare server
 const app = express();
 
 app.use(express.json());

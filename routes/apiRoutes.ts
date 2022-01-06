@@ -14,24 +14,25 @@ const apiRouter = Router();
 apiRouter.use(session({ secret: "secret" }));
 
 apiRouter.post("/inregistrare", async (req, res) => {
+  // inregistrare nume baza de date
   const { nume } = req.body;
   const newUser = new User({
     name: nume,
   });
   await newUser.save();
   req.session.name = nume;
-  // update to mongo
   return res.status(200).send("1");
 });
 
 apiRouter.get("/intrebari", (req, res) => {
+  //returnare o intrtebare aleatorie din lista de intrebari
   const question = questions[Math.floor(Math.random() * questions.length)];
   return res.status(200).json(question);
 });
 
 apiRouter.post("/update", async (req, res) => {
+  //actualizare punctaj utilizator in baza de date
   const { punctaj } = req.body;
-  //console.log(req.session);
   const { name } = req.session;
   const user = await User.findOne({ name });
   if (punctaj) user.points = punctaj;
@@ -40,6 +41,7 @@ apiRouter.post("/update", async (req, res) => {
 });
 
 apiRouter.get("/clasament", async (req, res) => {
+  // generale cod html pentru clasament
   const users = await User.find({}).sort({ points: -1 });
   let output: string = "";
 
